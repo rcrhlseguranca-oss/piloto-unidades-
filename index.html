@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PESQUISAS LEANDRO GOMES</title>
+    <!-- Importando o CSS externo -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+
+    <ul class="slideshow">
+        <li>imagem01</li>
+        <li>imagem02</li>
+        <li>imagem03</li>
+        <li>imagem04</li>
+    </ul>
+
+    <div class="overlay">
+        <div class="menu-bar">
+            <ul>
+                <li onclick="goHome()"><i class="fa fa-home"></i> HOME</li>
+            </ul>
+        </div>
+
+        <div class="container">
+            <div id="home-screen" class="screen active">
+                <h1>ESCOLHA A UNIDADE</h1>
+                <div class="unit-grid">
+                    <button class="btn-unit" onclick="openUnidade('TABOÃO DA SERRA-SP')">TABOÃO DA SERRA-SP</button>
+                    <button class="btn-unit" onclick="openUnidade('HORTOLANDIA-SP')">HORTOLANDIA-SP</button>
+                    <button class="btn-unit" onclick="openUnidade('RESENDE-RJ')">RESENDE-RJ</button>
+                    <button class="btn-unit" onclick="openUnidade('HIDROLÂNDIA-GO')">HIDROLÂNDIA-GO</button>
+                </div>
+            </div>
+
+            <div id="unit-screen" class="screen">
+                <h2 id="current-unit-name"></h2>
+                <div class="links-list">
+                    <a id="link-doc" href="#" target="_blank" class="link-card"><i class="fa fa-file-text"></i> DOCUMENTAÇÃO</a>
+                    <a id="link-lacres" href="#" target="_blank" class="link-card"><i class="fa fa-lock"></i> CONTROLE DE LACRES</a>
+                    <a id="link-pessoas" href="#" target="_blank" class="link-card"><i class="fa fa-users"></i> CONTROLE DE PESSOAS</a>
+                    <a id="link-veiculos" href="#" target="_blank" class="link-card"><i class="fa fa-truck"></i> CONTROLE DE VEÍCULOS</a>
+                    <a id="link-int-boxes" href="#" target="_blank" class="link-card"><i class="fa fa-check-square"></i> INTEGRIDADE DE BOXES</a>
+                    <a id="link-insp-boxes" href="#" target="_blank" class="link-card"><i class="fa fa-search"></i> INSPEÇÃO DE BOXES</a>
+                    <a id="link-seguranca" href="#" target="_blank" class="link-card"><i class="fa fa-shield"></i> INSP. EQUIP. SEGURANÇA</a>
+                </div>
+                <button class="btn-back" onclick="goHome()">VOLTAR PARA UNIDADES</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Importando o Script externo -->
+    <script src="script.js"></script>
+</body>
+</html>
